@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challengue</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <main>
         <div>
-            <img src="img/Logo.png" alt="Logotipo de Alura">
+            <img class="logo" src="img/Logo.png" alt="Logotipo de Alura">
         </div>
         <div class="principal">
-            <input class="texto-principal" type="text" placeholder="Ingrese el texto aqui">
-            <p class="mensaje-validacion">Solo letras minúsculas y sin acentos</p>
-            <div class="botones">
-                <button>Encriptar</button>
-                <button>Desencriptar</button>
-            </div>
+            <textarea class="texto-principal" name="texto" id="texto" cols="20" rows="10" placeholder="Ingrese el texto Aqui"></textarea>
+            <section class="inferior">
+                <p class="mensaje-validacion">Solo letras minúsculas y sin acentos</p>
+                <div class="botones">
+                    <button class="encriptar">Encriptar</button>
+                    <button class="desencriptar">Desencriptar</button>
+                </div>
+            </section>
         </div>
     </main>
     <aside class="aside">
