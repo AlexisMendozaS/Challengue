@@ -33,6 +33,18 @@ body {
     line-height: 48px;
     letter-spacing: 0em;
     text-align: left;
+    background: transparent;
+    border: transparent;
+    color: #0a3871;
+}
+
+.texto-principal::placeholder {
+    color: #0a3871;
+}
+
+.texto-principal:focus {
+    border-color: transparent;
+    border: 0;
 }
 
 .inferior {
@@ -56,6 +68,12 @@ body {
     line-height: 19px;
     letter-spacing: 0em;
     text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s; /* Agrega una transición para el efecto de escala */
+}
+
+.botones button:hover{
+    transform: scale(1.1);
 }
 
 .encriptar {
@@ -79,7 +97,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 16px;
 }
+
 .imagen-aside {
     width: 336px;
+}
+
+.mensaje-aside {
+    color: #343A40;
 }
